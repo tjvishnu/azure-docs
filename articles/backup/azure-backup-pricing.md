@@ -51,7 +51,7 @@ To estimate the costs of backing up Azure VMs or on-premises servers using Azure
 
   - How long do you expect to retain “Yearly” backups? (in years)
 
-  - How long do you expect to retain “Instant restore snapshots”? (1-7 days)
+  - How long do you expect to retain “Instant restore snapshots”? (1-5 days)
 
     - This option lets you restore from as far back as seven days in a quick manner using snapshots stored on disks
 
@@ -61,7 +61,7 @@ To estimate the costs of backing up Azure VMs or on-premises servers using Azure
 
 - **Optional** – Backup Storage Redundancy
 
-  - This indicates the redundancy of the Storage Account your backup data goes into. We recommend using **GRS** for the highest availability. Since it ensures that a copy of your backup data is kept in a different region, it helps you meet multiple compliance standards. Change the redundancy to **LRS** if you're backing up development or test environments that don't need an enterprise-level backup. Choose **RAGRS** if you want to enable **Cross-region-restore** for your backups
+  - This indicates the redundancy of the Storage Account your backup data goes into. We recommend using **GRS** for the highest availability. Since it ensures that a copy of your backup data is kept in a different region, it helps you meet multiple compliance standards. Change the redundancy to **LRS** if you're backing up development or test environments that don't need an enterprise-level backup. Select the **RAGRS** option in the sheet if you want to understand costs whhen [**Cross-region-restore**](https://docs.microsoft.com/en-us/azure/backup/backup-create-rs-vault#set-cross-region-restore) is enabled for your backups
 
 - **Optional** – Modify regional pricing or apply discounted rates
 
@@ -99,7 +99,7 @@ To estimate the costs of backing up SQL servers running in Azure VMs using Azure
 
     - You can also choose to have a policy with daily/weekly/monthly/yearly full backups. This option will consume slightly more storage than the first option.
 
-  - How long do you expect to retain “log” backups? (in days) [1-35]
+  - How long do you expect to retain “log” backups? (in days) [7-35]
 
   - How long do you expect to retain “Daily” backups? (in days)
 
